@@ -1,0 +1,237 @@
+<!DOCTaYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.kintechs.com/CN/service/consult.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 08:31:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>奥卡思_方案</title>
+    <meta name="keywords" content="奥卡思，成都奥克斯微电科技，电子信息，电路形式化功能验证，等价性功能验证，芯片及软件信息安全，低能耗设计优化及验证，可编程逻辑（FPGA）验证" />
+    <link rel="stylesheet" href="../css/menu-style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main-style.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.sliding-menu.js"></script>
+    <style>
+    .productCategoryNav {
+        width: 230px;
+        float: left;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-left: 10px;
+        /*background: pink;*/
+        margin-right: 10px;
+    }
+
+    .productCategory {
+        display: inline-block;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 8px;
+        margin-left: 5%;
+        margin-top: 5%;
+        cursor: pointer;
+        color: #999595;
+        background: #DDDDDD;
+    }
+
+    .active {
+        color: #ffffff;
+        background: #56C7F4;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function() {
+        $('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+        $('.ca-item-top').click(function() {
+            $('body').animate({
+                scrollTop: 0
+            }, 'slow');
+        });
+
+        $(".productCategory").mouseover(function() {
+            var index = $(this).index();
+            var b = $(".productCategory").eq(index).hasClass("active");
+            if (!b) {
+                $(".productCategory").removeClass("active");
+                $(".productCategory").eq(index).addClass("active");
+                $(".div-scheme-body").fadeOut(500);
+                $("#category" + index).fadeIn(500);
+            }
+        });
+
+    });
+    </script>
+</head>
+
+<body style="margin:0px;padding:0px;background:#211737;">
+    <!-- 两图标 -->
+    <div class="ca-item-dimension"></div>
+    <div class="ca-item-top"></div>
+    <!-- 菜单 -->
+    <div class="div-menu alpha">
+        <!-- 左边 -->
+        <div class="div-menu-left">
+            <img src="../images/logo.png" />
+        </div>
+        <!-- 右边 -->
+        <div class="div-menu-right">
+            <div id="HorizontalSlidingMenu">
+                <ul class="SlidingMenu Horizontal">
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">我们</span>
+                            <br/><span class="f-style2">ABOUT US</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="../aboutUs/news.html">新闻动态</a>
+                            <a href="../aboutUs/recruitment.html">招聘信息</a>
+                            <a href="../aboutUs/contact.html">联系我们</a>
+                        </div>
+                    </li>
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">案例</span>
+                            <br/><span class="f-style2">CASES</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="../case/case_government.html">政府案例</a>
+                            <a href="../case/case_enterprise.html">企业案例</a>
+                        </div>
+                    </li>
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">服务</span>
+                            <br/><span class="f-style2">SERVICE</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="consult.html">战略咨询</a>
+                            <a href="programImplementation.html">方案实施</a>
+                        </div>
+                    </li>
+                   <li class="list_dropdown">
+                            <div class="li_dropdown_title"><span class="f-style1">产品</span>
+                                <br/><span class="f-style2">PRODUCTS</span>
+                            </div>
+                            <div class="li_dropdown_content">
+                               <a href="https://mp.weixin.qq.com/s/pIVNctxBxDV4sQXvC1dRBQ">AveMC</a>  <!--../products/product_1.html  -->
+							   <a href="https://mp.weixin.qq.com/s/-dEF5CgbgBmS4-fTOVenAw">AveSEC</a>   <!--../products/product_2.html  -->
+							   <a href="https://mp.weixin.qq.com/s/7lZhD-1QoQNVfI51t_1tkg">MegaEC</a>   
+                            </div>
+                        </li>
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">简介</span>
+                            <br/><span class="f-style2">PROFILE</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="../companyProfile/company_profile.html#introduction">公司概况</a>
+                            <a href="../companyProfile/company_profile.html#culture">企业优势</a>
+                            <a href="../companyProfile/company_profile.html#team">公司团队</a>
+                        </div>
+                    </li>
+                    <li class="list_dropdown" id="home">
+                        <div class="li_dropdown_title">
+                            <a href="../home.html">
+                                    <span class="f-style1">首页</span><br/><span class="f-style2">HOME</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="ClearFix"></div>
+            </div>
+        </div>
+        <div class="ClearFix"></div>
+    </div>
+    <!-- 包裹 -->
+    <div id="div-body">
+        <!-- 图片切换 -->
+        <div class="div-slide" style="background:url('../images/service-1.jpg') center center no-repeat;"></div>
+        <div class="div-scheme" style="height:auto;">
+            <!-- 导航 -->
+            <div class="productCategoryNav" id="connect_me">
+                <div class="productCategory active">企业IT规划咨询</div>
+                <div class="productCategory">数据治理咨询</div>
+            </div>
+            <!-- 企业IT规划咨询 -->
+            <div id="category0" class="div-scheme-body" style="height:auto;">
+                <!-- group-->
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">企业IT规划咨询</div>
+                        <div class="content" style="line-height: 24px;text-align:center;">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;XX公司凭借多年来所积累的IT架构及应用系统的项目经验，深刻理解企业业务/IT战略发展与IT规划的意义。在此基础上科因团队优秀咨询人才可为企业提供着眼于前瞻性、系统性与适应性的IT规划咨询服务，能够帮助企业利用有限的IT投资成本获得持续改进的IT系统。科因企业IT规划咨询服务内容包括：
+                            </p>
+                            <img src="../images/consult_1.png">
+                            <p>
+                                <br>1、<strong>现状评估：</strong>提供现有系统功能、应用、IT管理等方面的评估。
+                                <br>2、<strong>战略规划：</strong>站在企业信息化的角度，用整体的眼光来审视业务与IT的共同愿景和方向，并使其成为管理层的统一共识；提供管理层面、业务层面、运营层面的IT规则。
+                                <br>3、<strong>系统规划咨询：</strong>包括系统总体架构、基础设施、应用规划等。
+                                <br>4、<strong>实施规划咨询：</strong>基于业界最佳实践的指导，引入业界已经证明的方法论和解决方案，使企业快速获得突破性的业绩；基于先进的应用系统的技术架构设计，且更加注重组织、技术、流程多方面要素的协调一致性，以适应战略发展的要求。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 数据治理咨询 -->
+            <div id="category1" class="div-scheme-body" style="height:auto;display: none;">
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">数据治理咨询</div>
+                        <div class="content" style="line-height: 24px;text-align:center;">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;XX公司凭借多年来所积累的数据治理经验，深刻理解数据治理对于企业的意义。公司提供数据治理框架，建立数据治理战略，并根据企业现状提供数据治理评估与分析，建立数据治理实施线路等。
+                            </p>
+                            <img src="../images/consult_2.png">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;数据治理咨询内容包括：
+                                <br>1、<strong>数据治理战略咨询：</strong>站在企业信息化的角度，用整体的眼光来审视业务与IT的共同愿景和方向，建立数据治理战略。
+                                <br>2、<strong>建立数据治理机制：</strong>包括组织、政策、流程、规范等，保障数据治理战略的贯彻执行。
+                                <br>3、<strong>数据现状评估分析：</strong>通过咨询服务，发现现在存在的问题与差距，通过矩阵分析，找到数据治理的痛点与关键原因。
+                                <br>4、<strong>实施线路图：</strong>基本于数据治理方法论，制订数据治理实施线路图。
+                                <br>5、<strong>管理与服务：</strong>通过基于流程、技术、管理等多重手段，提供数据标准、数据质量、数据生命周期等管理与服务。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="div-footer">
+            <div class="div-footer-content">
+                <div class="item" style="margin-left:0px;">
+                    <div class="item-title">简介</div>
+                    <div class="item-content p-top-15"><a href="../companyProfile/company_profile.html#introduction">公司简介</a></div>
+                    <div class="item-content p-top-5"><a href="../companyProfile/company_profile.html#culture">企业文化</a></div>
+                    <div class="item-content p-top-5"><a href="../companyProfile/company_profile.html#team">公司团队</a></div>
+                </div>
+                 <div class="item">
+                        <div class="item-title">产品</div>
+                       <div class="item-content p-top-15"> <a href="https://mp.weixin.qq.com/s/pIVNctxBxDV4sQXvC1dRBQ">AveMC</a>  <!--../products/product_1.html  --></div>
+                       <div class="item-content p-top-5"><a href="https://mp.weixin.qq.com/s/-dEF5CgbgBmS4-fTOVenAw">AveSEC</a>   <!--../products/product_2.html  --></div>      
+					   <div class="item-content p-top-5"> <a href="https://mp.weixin.qq.com/s/7lZhD-1QoQNVfI51t_1tkg">MegaEC</a>  </div>
+                    </div>
+                <div class="item">
+                    <div class="item-title">服务</div>
+                    <div class="item-content p-top-15"><a href="consult.html">战略咨询</a></div>
+                    <div class="item-content p-top-5"><a href="programImplementation.html">方案实施</a></div>
+                </div>
+                <div class="item">
+                    <div class="item-title">案例</div>
+                    <div class="item-content p-top-15"><a href="../case/case_government.html">政府案例</a></div>
+                    <div class="item-content p-top-5"><a href="../case/case_enterprise.html">企业案例</a></div>
+                </div>
+                <div class="item item-final">
+                    <div class="item-title">我们</div>
+                    <div class="item-content p-top-15"><a href="../aboutUs/news.html">新闻动态</a></div>
+                    <div class="item-content p-top-5"><a href="../aboutUs/recruitment.html">招聘信息</a></div>
+                    <div class="item-content p-top-5"><a href="../aboutUs/contact.html">联系我们</a></div>
+                </div>
+                <div class="item">
+                    <div class="ClearFix"></div>
+                </div>
+                <div class="copyright">&copy;2018&nbsp;成都奥卡思微电科技有限公司&nbsp;版权所有</div>
+                <div class="footer_information">地址：成都市高新区天府大道中段1366号天府软件园E6-2座12层16、17号</div>
+                <div class="footer_information">微信： ra3940&nbsp;&nbsp;&nbsp; 邮箱：jyuan@arcas-tech.com</div>
+                <div class="footer_information">电话：(86)18980826242(中国)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(408)4161239(美国)</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!-- Mirrored from www.kintechs.com/CN/service/consult.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 08:32:14 GMT -->
+</html>

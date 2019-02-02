@@ -1,0 +1,21 @@
+.news_content_detail {
+	padding:25px;
+}
+
+.news_content_detail p{
+	text-align: left;
+}
+.news_content_detail #time{
+	text-align: center;
+}
+#page{
+	padding:15px;
+	margin:0;
+	display: inline-block;
+}
+#page a{
+	color:#67839A;
+}
+#page a:hover{
+    color:#93DEF1;
+}

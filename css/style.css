@@ -1,0 +1,15 @@
+body          { font-family:Verdana; font-color:#272525; font-size:10pt; background-image:url(images/bg.html); background-color:#e3e4e9; background-repeat:repeat-x; margin-left:20px; margin-top:20px; scrollbar-face-color: #E3F0F7; scrollbar-track-color: #E3F0F7; scrollbar-arrow-color: black; scrollbar-shadow-color: #E3F0F7; scrollbar-dark-shadow-color: #E3F0F7; scrollbar-3dlight-color: #E3F0F7; scrollbar-highlight-color: #E3F0F7 }
+p             { font-family:Verdana; font-size:10pt; line-height:150%}
+td            { font-family:Verdana; font-size:10pt; line-height:150%}
+h1            { font-family:Verdana; font-size:20pt; font-weight:normal; color:#ff9933; line-height:150% }
+h2            { font-family:Verdana; font-size:14pt; font-weight:normal; color:#283891; line-height:150% }
+h3            { font-family:Verdana; font-size:10pt; color:#00447a; line-height:150% }
+h4            { font-family:Verdana; font-size:10pt; color:#00447a; line-height:150% }
+ol            { font-family:Verdana; font-size:10pt; list-style-type:decimal; line-height:150% }
+ul            { font-family:Verdana; font-size:10pt; list-style-type:circle; line-height:150% }
+li            { margin-bottom: 12px }
+li li         { margin-top:2px; margin-bottom:0; list-style-image: url(images/dash.html); line-height:150% }
+a:link        { color:#40a1dd; text-decoration:underline }
+a:visited     { color:#40a1dd; text-decoration:underline }
+a:hover       { color:#40a1dd; text-decoration:underline }
+img           { behavior: url("http://insidepra/iepngfix.htc") }

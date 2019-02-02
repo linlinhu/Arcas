@@ -1,0 +1,15 @@
+#div-body .div-scheme .div-scheme-body .list-item .item_right .content .cooperation_picture{
+	display: inline-block;
+	margin-top:30px;
+	margin-left:50px;
+}
+
+#div-body .div-scheme .div-scheme-body .contact-us .cooperation_picture img{
+	height: 130px;
+	width: 130px;
+}
+#div-body .div-scheme .div-scheme-body .contact-us .phone img{
+	height: 125px;
+	width: 125px;
+}
+

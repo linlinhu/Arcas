@@ -1,0 +1,337 @@
+<!DOCTaYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.kintechs.com/CN/service/programImplementation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 08:32:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>奥卡思_方案</title>
+    <meta name="keywords" content="奥卡思，成都奥克斯微电科技，电子信息，电路形式化功能验证，等价性功能验证，芯片及软件信息安全，低能耗设计优化及验证
+，可编程逻辑（FPGA）验证" />
+    <link rel="stylesheet" href="../css/menu-style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main-style.css" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.sliding-menu.js"></script>
+    <style>
+    .productCategoryNav {
+        width: 230px;
+        float: left;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-left: 10px;
+        /*background: pink;*/
+        margin-right: 10px;
+    }
+
+    .productCategory {
+        display: inline-block;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 8px;
+        margin-left: 5%;
+        margin-top: 5%;
+        cursor: pointer;
+        color: #999595;
+        background: #DDDDDD;
+    }
+
+    .active {
+        color: #ffffff;
+        background: #56C7F4;
+    }
+    </style>
+    <script type="text/javascript">
+    $(function() {
+        $('#HorizontalSlidingMenu .SlidingMenu').slidingMenu();
+        $('.ca-item-top').click(function() {
+            $('body').animate({
+                scrollTop: 0
+            }, 'slow');
+        });
+
+        $(".productCategory").mouseover(function() {
+            var index = $(this).index();
+            var b = $(".productCategory").eq(index).hasClass("active");
+            if (!b) {
+                $(".productCategory").removeClass("active");
+                $(".productCategory").eq(index).addClass("active");
+                $(".div-scheme-body").fadeOut(500);
+                $("#category" + index).fadeIn(500);
+            }
+        });
+
+    });
+    </script>
+    <!--     <script type="text/javascript">
+        if($("#connect_me").size()>0){
+      var $elm = $('#connect_me');
+      var startPos = $elm.offset().top;
+      $(window).scroll(function() {
+          var p = $(window).scrollTop();
+          if( p > startPos-100 ){
+              $elm.css({
+                  'position': 'fixed',
+                  'top': 25,
+                  'width':290
+              });
+          }else{
+              $elm.css({
+                  'position': 'relative'
+              });
+          }
+      });
+  }
+    </script> -->
+</head>
+
+<body style="margin:0px;padding:0px;background:#211737;">
+    <!-- 菜单 -->
+    <div class="div-menu alpha">
+        <!-- 左边 -->
+        <div class="div-menu-left">
+            <img src="../images/logo.png" />
+        </div>
+        <!-- 右边 -->
+        <div class="div-menu-right">
+            <div id="HorizontalSlidingMenu">
+                <ul class="SlidingMenu Horizontal">
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">我们</span>
+                            <br/><span class="f-style2">ABOUT US</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="../aboutUs/news.html">新闻动态</a>
+                            <a href="../aboutUs/recruitment.html">招聘信息</a>
+                            <a href="../aboutUs/contact.html">联系我们</a>
+                        </div>
+                    </li>
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">案例</span>
+                            <br/><span class="f-style2">CASES</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="../case/case_government.html">政府案例</a>
+                            <a href="../case/case_enterprise.html">企业案例</a>
+                        </div>
+                    </li>
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">服务</span>
+                            <br/><span class="f-style2">SERVICE</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="consult.html">战略咨询</a>
+                            <a href="programImplementation.html">方案实施</a>
+                        </div>
+                    </li>
+                   <li class="list_dropdown">
+                            <div class="li_dropdown_title"><span class="f-style1">产品</span>
+                                <br/><span class="f-style2">PRODUCTS</span>
+                            </div>
+                            <div class="li_dropdown_content">
+                                <a href="https://mp.weixin.qq.com/s/pIVNctxBxDV4sQXvC1dRBQ">AveMC</a>  <!--../products/product_1.html  -->
+							    <a href="https://mp.weixin.qq.com/s/-dEF5CgbgBmS4-fTOVenAw">AveSEC</a>   <!--../products/product_2.html  -->
+							    <a href="https://mp.weixin.qq.com/s/7lZhD-1QoQNVfI51t_1tkg">MegaEC</a>   
+                            </div>
+                        </li>
+                    <li class="list_dropdown">
+                        <div class="li_dropdown_title"><span class="f-style1">简介</span>
+                            <br/><span class="f-style2">PROFILE</span></div>
+                        <div class="li_dropdown_content">
+                            <a href="../companyProfile/company_profile.html#introduction">公司概况</a>
+                            <a href="../companyProfile/company_profile.html#culture">企业优势</a>
+                            <a href="../companyProfile/company_profile.html#team">公司团队</a>
+                        </div>
+                    </li>
+                    <li class="list_dropdown" id="home">
+                        <div class="li_dropdown_title">
+                            <a href="../home.html">
+                                    <span class="f-style1">首页</span><br/><span class="f-style2">HOME</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="ClearFix"></div>
+            </div>
+        </div>
+        <div class="ClearFix"></div>
+    </div>
+    <!-- 包裹 -->
+    <div id="div-body">
+        <!-- 图片切换 -->
+        <div class="div-slide" style="background:url('../images/service-2.jpg') center center no-repeat;"></div>
+        <div class="div-scheme" style="height:auto;">
+            <!-- 导航 -->
+            <div class="productCategoryNav" id="connect_me">
+                <div class="productCategory active">零售数据集成</div>
+                <div class="productCategory">金融数据集成</div>
+                <div class="productCategory">主数据管理</div>
+            </div>
+            <!-- 零售业 -->
+            <div id="category0" class="div-scheme-body" style="height:auto;">
+                <!-- group-->
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">业务痛点</div>
+                        <div class="content" style="line-height: 24px;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;随着互联网，特别是移动互联网的飞速发展，传统零售业正发生翻天覆地的变化。电商的异军突起，颠覆了人们的传统消费方式，我国大型零售业已从高速发展期进入了调整期，经营业绩下降，各种问题和矛盾不断表现出来，百货商场不再是消费首选，实体店艰难人尽皆知。零售业面临诸多挑战，如电子商务的冲击、同业恶性竞争、客户忠诚度越来越低可供选择的购物方式越来越多、零售业运营成本增长过快、数据维护成本增加等等。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;面对如此激烈的竞争环境，零售业如何在降低产品的运营与维护成本，快速响应市场变化？如何在产品与信息数据快速增长的同时，加快产品更新上市的速度？如何跨部门合作，提高协作效率、以高效的产品管理来提高企业竞争力？
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">解决方案</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;科因公司零售业解决方案将围绕上述痛点，从产品信息管理与高效运营的角度，提供完整的产品信息管理方案。该方案将包括以下关键功能：
+                            <br>1、通过信息治理，降低产品的名称、编号的错误率，减少产品重名等现象，提高产品信息的准确性。
+                            <br>2、通过流程整合，解决产品的各生命周期的信息孤岛问题，保证产品信息的完整性。在流程中，各单位部门可以根据权限维护各自部门的信息，做到信息维护的责权清晰明了。
+                            <br>3、通过产品信息共享，保证产品信息的统一性。各部门数据在业务生产线产生的同时，数据将同步到企业总部，由总部将信息与其它部门进行信息共享。
+                            <br>4、通过协作，加快产品的上市发布速度，保证产品信息的时效性。各部门在信息维护平台统一协作，设计部门产生编号后，生产部门对基本信息完善，市场部门完成定价信息等。
+                            <br>5、通过信息标准的统一，降低信息维护成本等。
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">方案价值</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;科因公司零售业解决方案将为企业带来如下业务价值：
+                            <br>• 加快产品上市速度，提高市场响应速度。
+                            <br>• 减少产品信息错误率，降低客户退货率与销售成本。
+                            <br>• 降低产品信息维护成本，提高产品销售利润率。
+                            <br>• 提高部门协作效率，提高客户满意度。
+                            <br>•提高市场反应速度，增强企业竞争力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 金融业 -->
+            <div id="category1" class="div-scheme-body" style="height:auto;display: none;">
+                <!-- group-->
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">业务痛点</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;金融次贷危机出现后，金融业受到较大的冲击，以及随着互联网的发展，金融业传统业务亦受到互联网金融与新消费模式的影响。传统银行或保险公司面临如何提升业务，如何为客户提供更有针对性的服务，如何为客户提供更合理的理财产品，如何更好地提升客户服务质量等等。
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">解决方案</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;科因公司为金融业提供客户行为分析 (Customer Behavior Analytics) 解决方案，通过挖掘海量的结构化和非结构化数据，针对每个客户开展具有吸引力的产品推荐和营销行动。该解决方案会给市场营销活动带来颠覆性的影响，有助于随时随地改进客户互动。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;通过动态划分客户群，帮助财富管理机构更好地预测客户的生活和财务事件，发现产品商机，并提供量身定制的消息。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;通过数据和分析可以帮助企业确定客户是否存在流失风险，并采取正确的措施来缓解这种风险。及时适当的措施可以显著提高客户满意度，帮助公司保留有价值的客户。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;利用预测性分析，打造个性化的客户互动，提供量身定制的行动。高级预测模型会分析客户交易和消费行为，发现客户需要和喜好，对客户日常活动进行预测，营造独特的客户体验。
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">方案价值</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;科因公司零售业解决方案将为企业带来如下业务价值：
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发现客户潜在需求，提升业务增值。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;针对客户提供个性化服务，提升服务满意度。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;减少客户信息的错误率，降低客户投诉率。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;减少销售成本，提高客户销售利润率。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提供个性化理财服务，满足不同客户群的理财增值需要。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 主数据管理 -->
+            <div id="category2" class="div-scheme-body" style="height:auto;display: none;">
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">业务痛点</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;企业当前面临着产品、物料、人力资源、财务、供应商等信息需求不断增长的挑战。企业集中管理需要精准、统一、及时的业务基础数据。业务转型要求企业级新的生产、运营、管理、财务流程，这些需要一套统一共享的主信息管理。企业客户在仅仅根据产品信息制订购买决策、而不与产品进行实际交互时，希望能够获取更多信息。企业内部人员也需要在工作地点通过移动设备访问需要的详细信息。厂家需要能够迅速引入新的、差异化的产品和服务，以迎合消费者的需要。而且，政府也要求关于所提供产品及服务的重要信息得到精心的管理。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;引起企业主数据问题的重要因素之一是信息彼此隔离。在许多企业中，主数据分布在众多彼此隔离的系统中。客户服务部门、生产部门以及采购部门都有各自的系统。即使在一个业务部门里，也有众多前端和后端系统，这些系统包含对业务至关重要的数据，但通常情况下无法与其他系统共享这些信息。正是由于构建在各种架构之上的不兼容系统中的这种部门化数据，使得企业几乎不可能创建和维护主数据的“单一”视图。
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">解决方案</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;科因公司主数据管理方案为企业解决部门间信息孤岛问题，基于主数据生命周期（产生、集成、存储、发布、维护、使用、归档）各个环节建立主数据标准、 搭建数据质量管理体系，并通过成熟的数据管理体系保障不同管理模块的有序运行，同时以技术体系为支撑来确保数据标准、数据质量等策略的落地和数据的正常运营。
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;主数据生命周期主要包含主数据的产生、整合、存储、发布、维护、使用和归档几个阶段。主数据生命周期管理贯穿主数据生命周期各个阶段：
+                            <br>产生：对主数据产生规范、产生方式做统一管理。
+                            <br>整合：对主数据集成规范、集成机制等统一管理。
+                            <br>存储：对主数据存储系统、存储方式等统一管理。
+                            <br>发布：对主数据发布、共享机制等统一管理。
+                            <br>维护：对主数据维护规范、维护职责等统一管理。
+                            <br>使用：对主数据使用职责、使用监督等统一管理。
+                            <br>归档：对主数据归档机制、归档流程等统一管理。
+                            <br>数据格式标准：制订主数据数据格式，包括主数据信息项名称格式、长度格式、类型格式等，保证主数据按照统一的数据格式产生、集成、存储、发布、维护、使用以及归档。
+                            <br>业务规则标准：约定主数据之间的关联关系、约束规则，保证不同主数据间信息的一致性和主数据的完整性。
+                            <br>数据来源规定：规定主数据的唯一出处，杜绝相同主数据来源众多，保证主数据的准确性和一致性。
+                            <br>数据结构管理：规定主数据的属性、编码构成等，保证主数据信息不冗余、不含无效信息，确保主数据的完整性、规范性。
+                            <br>数据流程标准：制订主数据的维护标准、流程管理机制、保证数据处理流程畅通。
+                            <br>明确机制：明确主数据管理的配套制度、规范，确保规范满足业务需求的同时具有可执行性。
+                            <br>确定组织：确定主数据全生命周期管理的组织机构，明确主数据生命周期管理的归口部门，方便对主数据进行统一、全面的管控。
+                            <br>定义职责：定义流程活动参与者的职责，并制定和执行奖惩制度，更加强有力地约束流程活动参与者，避免因人为因素造成主数据不准确、不规范。
+                            <br>权限管理：对不同的部门、人员，对不同的数据，均有不同的角色、权限管理与设置，实现数据的责权管理。
+                            <br>规范流程：规范主数据的申请、变更、修改、归档等流程，对流程实行规范化管理与监督，确保流程执行无误，保证主数据的可靠性。
+                            <br>集成管理：使用集成技术，将各部门的数据集成统一管理，及时更新，保证数据的时效性。
+                            <br>制定接口：制定接口，如生产者、消费者、接口名称、参数等，并严格按照接口规范执行，保证系统间的主数据维护、同步及时，确保主数据一致性。
+                            <br>建立跟踪：建立相应的数据治理跟踪与审计，保证数据治理的有章可循、有据可依 。
+                            <br>对外提供数据服务：包括数据接口、获取方式、获取内容、更新时间、服务对象等。
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item_right">
+                        <div class="title">方案价值</div>
+                        <div class="content" style="line-height: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;科因公司主数据管理解决方案全面整合企业主数据，消除信息孤岛，实现企业主数据统一视图，为企业带来如下业务价值：
+                            <br>1、统一数据标准，减少数据不一致带来的不良影响。
+                            <br>2、通过整合各部门主数据，形成统一视图，解决信息孤岛问题，从而减少沟通成本。
+                            <br>3、统一的数据管理与维护流程，大大降低了维护成本。
+                            <br>4、通过主数据服务，快速支持新业务，提高市场竞争力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+         <div class="div-footer">
+            <div class="div-footer-content">
+                <div class="item" style="margin-left:0px;">
+                    <div class="item-title">简介</div>
+                    <div class="item-content p-top-15"><a href="../companyProfile/company_profile.html#introduction">公司简介</a></div>
+                    <div class="item-content p-top-5"><a href="../companyProfile/company_profile.html#culture">企业优势</a></div>
+                    <div class="item-content p-top-5"><a href="../companyProfile/company_profile.html#team">公司团队</a></div>
+                </div>
+                <div class="item">
+                        <div class="item-title">产品</div>
+                       <div class="item-content p-top-15"> <a href="https://mp.weixin.qq.com/s/pIVNctxBxDV4sQXvC1dRBQ">AveMC</a>  <!--../products/product_1.html  --></div>
+                       <div class="item-content p-top-5"><a href="https://mp.weixin.qq.com/s/-dEF5CgbgBmS4-fTOVenAw">AveSEC</a>   <!--../products/product_2.html  --></div>      
+					   <div class="item-content p-top-5"> <a href="https://mp.weixin.qq.com/s/7lZhD-1QoQNVfI51t_1tkg">MegaEC</a>  </div>
+                    </div>
+                <div class="item">
+                    <div class="item-title">服务</div>
+                    <div class="item-content p-top-15"><a href="consult.html">战略咨询</a></div>
+                    <div class="item-content p-top-5"><a href="programImplementation.html">方案实施</a></div>
+                </div>
+                <div class="item">
+                    <div class="item-title">案例</div>
+                    <div class="item-content p-top-15"><a href="../case/case_government.html">政府案例</a></div>
+                    <div class="item-content p-top-5"><a href="../case/case_enterprise.html">企业案例</a></div>
+                </div>
+                <div class="item item-final">
+                    <div class="item-title">我们</div>
+                    <div class="item-content p-top-15"><a href="../aboutUs/news.html">新闻动态</a></div>
+                    <div class="item-content p-top-5"><a href="../aboutUs/recruitment.html">招聘信息</a></div>
+                    <div class="item-content p-top-5"><a href="../aboutUs/contact.html">联系我们</a></div>
+                </div>
+                <div class="item">
+                    <div class="ClearFix"></div>
+                </div>
+                <div class="copyright">&copy;2018&nbsp;成都奥卡思微电科技有限公司&nbsp;版权所有</div>
+                <div class="footer_information">地址：成都市高新区天府大道中段1366号天府软件园E6-2座12层16、17号</div>
+                <div class="footer_information">微信： ra3940&nbsp;&nbsp;&nbsp; 邮箱：jyuan@arcas-tech.com</div>
+                <div class="footer_information">电话：(86)18980826242(中国)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(408)4161239(美国)</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!-- Mirrored from www.kintechs.com/CN/service/programImplementation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jul 2018 08:32:20 GMT -->
+</html>
